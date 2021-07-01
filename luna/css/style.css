@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    background-image: url(https://i.pinimg.com/736x/5d/07/63/5d07631beaea23a7914ed3e92b5cb6a4.jpg);
+    background-repeat: repeat;
+    background-position-x: center;
+    background-position-y: center;
+    height: 100vh;
+    background-size: 65vh;
+    
+}
+
+h1 {
+    color: #FFDC00;
+    font-style: italic;
+    font-size: 7vh;
+    font-family:fantasy;
+}
+#bonito {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#charmoso {
+    color: black;
+}
+.luna {
+    color: black;
+    font-size: 2vh;
+    
+}
+.div {
+    padding-top: 60vh;
+}

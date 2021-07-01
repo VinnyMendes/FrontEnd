@@ -1,0 +1,36 @@
+html * {
+    margin: 0;
+}
+
+#cabecalho {
+    height: 150px;
+    background-color: #D5CFA7;
+    padding: 20px;
+}
+
+#conteudo {
+    height: 800px;
+    background-color: #797066;
+    position: relative;
+}
+
+#conteudo div{
+    position: absolute;
+}   
+
+.lua {
+    height: 200px;
+    width: 200px;
+    object-fit:cover;
+    padding: 20px;
+}
+
+#rodape {
+    height: 200px;
+    background-color: #3E362F;
+    padding: 20px;
+}
+
+.icones {
+    height: 100px;
+}
