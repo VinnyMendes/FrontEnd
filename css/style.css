@@ -86,15 +86,49 @@ main a{
 footer {
     color: var(--green);
     background: black;
-    padding-left: 10vw;
+    width: 100%;
+    height: auto;
+    margin: auto;
 }
-footer img{
-    width: 7rem;
-    margin: 3rem;
+
+.social-icons-list{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding-top: 2rem;
 }
+.social-icons-list ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+}
+.social-icons-list ul li{
+    display: inline-block;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    background: black;
+    border-radius: 100%;
+    margin: 0 1rem;
+
+}
+
+
+
+.social-icons-list ul li:nth-child(3){
+    background: #fff;
+}
+.social-icons-list img{
+    width: 10rem;
+    height: auto;
+
+}
+
+
+
+
+
 footer p{
     text-align: right;
-}
-footer div{
-    display: inline-block;
 }
