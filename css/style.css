@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    --blue: #d9a80d;
+    --dark-green: #ffff;
+    --green: #68f01b;
+    --light-green: #8ee4af;
+    --white: #edf5e1;
+    font-size: 62.5%;
+}
+
+
+body {
+    color: white;
+
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    min-height: 20vh;
+    background: rgb(0,0,0);
+    background: linear-gradient(143deg, rgba(0,0,0,1) 0%, rgba(38,0,68,1) 100%);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    padding-left: 10vw;
+
+}
+header h1{
+    font-size: 7rem;
+    margin-bottom: 12rem;
+    max-width: 12ch;
+    color: rgb(255, 217, 0);
+
+}
+header p{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    max-width: 30vw;
+    line-height: 1.5em;
+}
+main{
+    background-image: url(https://images-ext-2.discordapp.net/external/B3UR24rVxWDuHnqCaaxtIsvVwLs-V_fD2VK7aFwZQCs/%3Fixlib%3Drb-1.2.1%26ixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto%3Dformat%26fit%3Dcrop%26w%3D1950%26q%3D80/https/images.unsplash.com/photo-1558346648-9757f2fa4474?width=1014&height=676);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* display: flex; */
+    justify-content: left;
+    padding:10rem 30vw;
+}
+#lista {
+    list-style-type: none;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+.sites{
+    font-size: 5rem;
+    background-color: rgb(255, 217, 0);
+    border: none;
+    color: black;
+    padding: 3rem 5rem;
+    text-decoration: none;
+    display: block;
+    flex-grow: 0;
+    border-radius: 3rem 0;
+    transition: 0.1s;
+    background-color: 0.1s;
+}
+
+.sites:hover{
+    background: orange;
+}
+
+
+main a{ 
+    text-decoration: none; 
+    color: var(--white); 
+}
+footer {
+    color: var(--green);
+    background: black;
+    padding-left: 10vw;
+}
+footer img{
+    width: 7rem;
+    margin: 3rem;
+}
+footer p{
+    text-align: right;
+}
+footer div{
+    display: inline-block;
+}
