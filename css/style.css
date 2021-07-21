@@ -55,7 +55,6 @@ main{
     gap: 4rem;
     grid-template-columns: 1fr;
     text-align: center;
-    width: 25%;
     justify-self: center;
 }
 .sites{
@@ -100,9 +99,11 @@ footer ul li a img{
 }
 footer p{
     padding-top: 3rem;
+    margin-left: auto;
+    color: rgb(117, 0, 207);
 }
-@media (max-width: 851px){
+/* @media (max-width: 851px){
     .container{
         justify-content: left;
     }
-}
+} */

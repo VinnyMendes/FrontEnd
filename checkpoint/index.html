@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/VinnyFlix.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <title>VinnyFlix</title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+        <div id="logo">
+            <h1>VinnyFlix</h1>
+        </div>
+        </a>
+        <p>Assista a Filmes e Séries!</p>
+    </header>
+    <main>
+        <div class="bloco">
+            <div id="login"> 
+                <form method="post" action="index.html">
+                    <h2>Cadastre-se</h2>
+
+                    <input type="text" name="user" id="user" aria-label="Usuário" placeholder="Usuário" required>
+    
+                    <input type="email" name="email" id="email" aria-label="Email" placeholder="Email" required>
+    
+                    <input type="password" name="senha" id="senha" aria-label="Senha" placeholder="Senha" required>
+
+                    <input type="password" name="confirm" id="confirm" aria-label="Confirme sua senha" placeholder="Confirme sua senha" required>
+                    <div id="checkbox">
+                        <input type="checkbox" name="lembre" id="lembre" placeholder="lembre" required>
+                        <label for="lembre">Li e aceito os termos e condições</label>
+                    </div>
+                    <div id="botoes">
+                        <button type="reset" class="botao" id="cancel">Cancelar</button> 
+                        <button type="submit" class="botao">Cadastrar</button> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Graphic design is my passion</p>
+    </footer>
+    <script>
+        document.querySelector("form").addEventListener("submit",(event)=>{
+            event.preventDefault()
+            alert("Seu cadastro foi realizado com sucesso!!!")})
+    </script>
+</body>
+</html>
