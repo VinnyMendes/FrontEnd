@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 62,5%;
+    background-color: rgb(246, 246, 246);
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(231, 0, 0);
+    padding: 3rem 5rem;
+    color: white;
+}
+header h1{
+    width: 10%;
+}
+header img{
+    animation: imageRotate 30s infinite;
+    width: 10%;
+}
+header nav{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+header ul{
+    display: flex;
+    list-style-type: none;
+    width: 60%;
+    justify-content: space-around;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    padding: 2rem;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.3rem;
+}
+header a:hover{
+    color: rgb(155, 155, 155);
+}
+
+
+
+@keyframes imageRotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+main{
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+    animation: mainAnimation 1s;
+}
+@keyframes mainAnimation{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(100%);
+    }
+}
+
+.container{
+    padding: 5% 35% 0%;
+}
+legend{
+    text-align: left;
+}
+input:focus{
+    background-color: #E8F0FE;
+}
+input[type="email"], input[type="text"] {
+    margin-bottom: 1rem;
+    width: 60%;
+    padding: 1%;
+}
+input[type="datetime-local"], input[type="radio"], input[type="checkbox"]{
+    cursor: pointer;
+}
+
+input:hover, textarea:hover, input:focus, textarea:focus{
+    transform: scale(1.01);
+}
+
+select{
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+textarea{
+    margin-bottom: 1rem;
+    width: 60%;
+}
+
+fieldset{
+    border-radius: 1.5rem;
+    background-color: white;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+}
+fieldset:nth-child(1) label{
+    display: block;
+}
+
+main p{
+    text-align: end;
+    color: greenyellow;
+}
+button{
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    border: 2px solid transparent;
+    background-color: rgb(181, 199, 255);
+    padding: 0.3rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    background-color: rgb(155, 179, 251);
+    transform: scale(1.3);
+}
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
