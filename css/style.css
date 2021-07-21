@@ -5,6 +5,9 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+html, body{
+    scroll-behavior: smooth;
+}
 
 html {
     font-size: 62.5%;
@@ -26,21 +29,25 @@ header{
     justify-content: center;
     position: relative;
     background-color: transparent;
+    scroll-snap-align: start;
 }
 header h1{
-    font-size: clamp(2rem, 9vw, 15rem);
+    font-size: clamp(3rem, 9vw, 15rem);
     color: rgb(255, 217, 0);
     flex-wrap: nowrap;
 }
 header p{
     padding: 20rem 3rem 0;
-    font-size: clamp(1rem, 3vw, 3rem);
+    font-size: clamp(1.2rem, 3vw, 3rem);
 
 }
 main{
-    background-image: url(https://images-ext-2.discordapp.net/external/B3UR24rVxWDuHnqCaaxtIsvVwLs-V_fD2VK7aFwZQCs/%3Fixlib%3Drb-1.2.1%26ixid%3DMnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8%26auto%3Dformat%26fit%3Dcrop%26w%3D1950%26q%3D80/https/images.unsplash.com/photo-1558346648-9757f2fa4474?width=1014&height=676);
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 250, 220);
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    min-height: 100vh;
 }
 .container{
     display: flex;
@@ -55,10 +62,10 @@ main{
     gap: 4rem;
     grid-template-columns: 1fr;
     text-align: center;
-    justify-self: center;
+    align-items: center;
 }
 .sites{
-    font-size: clamp(3rem, 3vw, 5rem);
+    font-size: clamp(2rem, 3vw, 5rem);
     background-color: rgb(255, 217, 0);
     border: 1px solid transparent;
     border-radius: 3rem;
@@ -79,31 +86,44 @@ main{
     box-shadow: 0px 0px 0px black;
 }
 
-footer {
+#footer {
     width: 100%;
-    height: auto;
-    margin: auto;
+    margin: 0 auto 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-footer ul{
+#footer ul{
     display: flex;
     list-style-type: none;
-    gap: 4rem;
 }
-footer ul li a img{
+#footer li{
+    margin: 0 clamp(0.5rem, 3vw, 2rem);
+}
+#footer ul li a img{
     padding-top: 3rem;
     width: clamp(20px, 20vw, 100px);
     height: auto;
 }
-footer p{
+#footer p{
     padding-top: 3rem;
     margin-left: auto;
     color: rgb(117, 0, 207);
+    margin-top: auto;
 }
-/* @media (max-width: 851px){
-    .container{
-        justify-content: left;
+.gdimp {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    color: rgb(190, 190, 190);
+    text-shadow: rgba(0,0,0,0.2) 1px 1px 5px;
+}
+
+@media (min-width: 450px){
+    #lista{
+        grid-template-columns: 1fr 1fr;
+    }  
+    html, body{
+        scroll-snap-type: y mandatory;
     }
-} */
+}
