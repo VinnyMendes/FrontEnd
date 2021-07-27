@@ -81,7 +81,7 @@ main{
     border-radius: 1rem;
     padding: 2rem 3rem 3rem;
     animation: mainAnimation 1s;
-    min-width: 14rem;
+    min-width: clamp(9rem, 10vw, 15rem);
     height: auto;
 }
 
